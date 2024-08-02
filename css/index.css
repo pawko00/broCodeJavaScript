@@ -1,0 +1,50 @@
+.text-center {
+  text-align: center;
+}
+
+.button-section {
+  width: 50%;
+  max-height: 50%;
+  height: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.button-inside {
+  width: 33%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: cornflowerblue;
+  color: white;
+}
+
+.button-inside:hover {
+  background-color: rgb(9, 93, 250);
+}
+
+.button-text {
+  font-size: medium;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.counter {
+  font-size: 2em;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgb(255, 0, 0);
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-left: 25%;
+  margin-right: 25%;
+  max-height: 2%;
+  width: 50%;
+  background-color: white;
+  border-radius: 2%;
+  border: 3px;
+  border-style: solid;
+  border-color: red;
+}
+
+.big-number {
+  font-size: 4em;
+}

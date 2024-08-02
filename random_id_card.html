@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "stylesheet" href = "css/random_id_card.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Generate your id </title>
+        
+    </head>
+    <body>
+        <form name = "first_form"  onsubmit="return checkFirstForm()" method="get">
+            <fieldset class = "field-back">
+                <legend>Do you need completly random data? (if you will choose 'no', we will ask you for data you want to have in your id)</legend>
+                
+                <input type="radio" name="randomData" id="randomYes" value="yes">
+                <label for = "randomYes">Tak</label>
+                <input type="radio" name="randomData" id="randomNo" value="no">
+                <label for = "randomNo">Nie</label><br>
+                <input type = "submit" value="Potwierdź">
+
+            </fieldset>
+        </form>
+        <p id = "hook"></p>
+        <script src = "js/random_id_card.js" type = "module"></script>
+    </body>
+</html>

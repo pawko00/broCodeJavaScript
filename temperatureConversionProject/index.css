@@ -1,0 +1,35 @@
+.body-size{
+    height: 100%;
+}
+.content{
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    height: 60%;
+    text-align: center;
+    background-color: rgb(160, 201, 240);
+    border-style:dashed;
+}
+
+.head-text{
+    color:rgb(233, 84, 84);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.regular-text{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+}
+
+.temperature-box{
+    width: 8%;
+}
+
+.radio-box{
+    margin-top: 5%;
+}
+.button{
+    background-color: rgb(247, 147, 144);
+    margin-top: 3%;
+    border-radius: 15%;
+}
