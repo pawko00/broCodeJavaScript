@@ -3,6 +3,7 @@ const radioButtons = document.getElementsByName("conversionType");
 
 let input;
 let conversionType;
+let message; 
 
 const result = document.getElementById("result");
 
@@ -11,10 +12,10 @@ button.onclick = function(){
     input = document.getElementById("temperatureInput").value;
     if(isNaN(Number(input)) || !isRadioSelected()){
         result.textContent = "Enter valid data(input must be a number) and select a conversion type!";
-        result.classList.add("error")
+        result.classList.add("error");
     }else{
-        result.textContent = `Result: ${convert(conversionType, Number(input))}`;
-        result.classList.remove("error")
+        convertAndCreateMessage(conversionType,Number(input));
+        result.textContent = message;
     }
 }
 
@@ -28,11 +29,13 @@ function isRadioSelected(){
     return false;
 }
 
-function convert(c,x){
+
+
+function convertAndCreateMessage(c,x){
     if(c == "cf"){
-        return convertCelToFar(x);
+        message = `${x}°C is ${convertCelToFar(x).toFixed(2)}°F`
     }else{
-        return convertFarToCel(x);
+        message = `${x}°F is ${convertFarToCel(x).toFixed(2)}°C`
     }
 }
 
